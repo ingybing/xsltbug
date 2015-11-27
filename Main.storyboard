@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="361" y="116" width="46" height="30"/>
+                                <state key="normal" title="Apply XML Transform">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <rect key="frame" x="286" y="974" width="196" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="28"/>
+                                        <include reference="29"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="28" firstItem="6" firstAttribute="height" constant="30"/>
+                                    <constraint id="29" firstItem="6" firstAttribute="width" constant="196"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="28"/>
+                                        <exclude reference="29"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="UIButton6_TouchUpInside:" destination="BYZ-38-t0r" id="53" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="7" translatesAutoresizingMaskIntoConstraints="NO" text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xA;&lt;root&gt;This is a test.&lt;/root&gt;">
+                                <rect key="frame" x="20" y="20" width="160" height="240"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <rect key="frame" x="20" y="69" width="728" height="274.5"/>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Xml" lineBreakMode="tailTruncation" minimumFontSize="10" id="8" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="40" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <rect key="frame" x="20" y="40" width="29.5" height="21"/>
+                                    <mask key="constraints">
+                                        <include reference="14"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="14" firstItem="8" firstAttribute="height" constant="21"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="14"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Xslt" lineBreakMode="tailTruncation" minimumFontSize="10" id="9" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="40" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <rect key="frame" x="20" y="351.5" width="42" height="21"/>
+                                    <mask key="constraints">
+                                        <include reference="21"/>
+                                        <include reference="22"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="21" firstItem="9" firstAttribute="height" constant="21"/>
+                                    <constraint id="22" firstItem="9" firstAttribute="width" constant="42"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="21"/>
+                                        <exclude reference="22"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="10" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="20" width="160" height="240"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <rect key="frame" x="20" y="380.5" width="728" height="274"/>
+                                </variation>
+                                <string key="text">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+	&lt;xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/&gt;
+	&lt;xsl:template match="/"&gt;
+		&lt;test&gt;
+			&lt;xsl:value-of select="."/&gt;&lt;xsl:value-of select="'&amp;amp;&amp;amp;'" disable-output-escaping="yes"/&gt;
+		&lt;/test&gt;
+	&lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+</string>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="32" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="20" width="160" height="240"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <rect key="frame" x="20" y="691.5" width="728" height="274.5"/>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Result" lineBreakMode="tailTruncation" minimumFontSize="10" id="34" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="40" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <rect key="frame" x="20" y="662.5" width="60" height="21"/>
+                                    <mask key="constraints">
+                                        <include reference="35"/>
+                                        <include reference="36"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="35" firstItem="34" firstAttribute="height" constant="21"/>
+                                    <constraint id="36" firstItem="34" firstAttribute="width" constant="42">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="35"/>
+                                        <exclude reference="36"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6"/>
+                                <exclude reference="7"/>
+                                <exclude reference="8"/>
+                                <exclude reference="9"/>
+                                <exclude reference="10"/>
+                                <exclude reference="32"/>
+                                <exclude reference="34"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="12"/>
+                                <exclude reference="13"/>
+                                <exclude reference="15"/>
+                                <exclude reference="16"/>
+                                <exclude reference="20"/>
+                                <exclude reference="23"/>
+                                <exclude reference="24"/>
+                                <exclude reference="25"/>
+                                <exclude reference="26"/>
+                                <exclude reference="30"/>
+                                <exclude reference="37"/>
+                                <exclude reference="38"/>
+                                <exclude reference="39"/>
+                                <exclude reference="40"/>
+                                <exclude reference="41"/>
+                                <exclude reference="45"/>
+                                <exclude reference="46"/>
+                                <exclude reference="47"/>
+                                <exclude reference="48"/>
+                                <exclude reference="52"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="6"/>
+                                <include reference="7"/>
+                                <include reference="8"/>
+                                <include reference="9"/>
+                                <include reference="10"/>
+                                <include reference="32"/>
+                                <include reference="34"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="12"/>
+                                <include reference="13"/>
+                                <include reference="15"/>
+                                <include reference="16"/>
+                                <include reference="20"/>
+                                <include reference="23"/>
+                                <include reference="24"/>
+                                <include reference="25"/>
+                                <include reference="26"/>
+                                <include reference="30"/>
+                                <include reference="37"/>
+                                <include reference="38"/>
+                                <include reference="39"/>
+                                <include reference="40"/>
+                                <include reference="41"/>
+                                <include reference="45"/>
+                                <include reference="46"/>
+                                <include reference="47"/>
+                                <include reference="48"/>
+                                <include reference="52"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="12" firstItem="8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="13" firstItem="8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20"/>
+                            <constraint id="15" firstItem="7" firstAttribute="top" secondItem="8" secondAttribute="bottom" constant="8"/>
+                            <constraint id="16" firstItem="7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="20" firstItem="9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="23" firstItem="9" firstAttribute="top" secondItem="7" secondAttribute="bottom" constant="36">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint id="24" firstItem="10" firstAttribute="top" secondItem="9" secondAttribute="bottom" constant="8"/>
+                            <constraint id="25" firstItem="10" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="26" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="10" secondAttribute="trailing" constant="588">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint id="30" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="6" secondAttribute="bottom" constant="32">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint id="37" firstItem="34" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint id="38" firstItem="34" firstAttribute="top" secondItem="10" secondAttribute="bottom" constant="51">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint id="39" firstItem="32" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
+                            <constraint id="40" firstItem="32" firstAttribute="top" secondItem="34" secondAttribute="bottom" constant="68">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint id="41" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="32" secondAttribute="trailing" constant="588">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint id="45" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" constant="20"/>
+                            <constraint id="46" firstItem="7" firstAttribute="height" secondItem="10" secondAttribute="height"/>
+                            <constraint id="47" firstItem="7" firstAttribute="height" secondItem="32" secondAttribute="height"/>
+                            <constraint id="48" firstItem="6" firstAttribute="top" secondItem="32" secondAttribute="bottom" constant="92">
+                                <variation key="heightClass=regular-widthClass=regular" constant="8"/>
+                            </constraint>
+                            <constraint id="52" firstItem="6" firstAttribute="trailing" secondItem="32" secondAttribute="centerX" constant="98"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtXml" destination="7" id="name-outlet-7"/>
+                        <outlet property="txtXslt" destination="10" id="name-outlet-10"/>
+                        <outlet property="txtResult" destination="32" id="name-outlet-32"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72" y="61"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="iPad"/>
+    </simulatedMetricsContainer>
+</document>
